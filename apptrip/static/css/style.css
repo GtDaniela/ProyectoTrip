@@ -1,0 +1,80 @@
+body{
+   /* background: linear-gradient(rgb(34, 106, 124), rgb(255, 255, 255)); */
+   /*background-image: url(../media/fotos/fondoo.jfif );*/
+   background-color: rgb(151, 194, 201);
+   background-repeat: no-repeat;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+    /* background-image: url(../img/cielo.jpg);
+    */
+}
+.formulario{
+    background: rgba(252, 252, 252, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0,0.500);
+    color:white;
+}
+.register{
+    width: 50%;
+}
+.form-control{
+    background: rgba(0,0,0,.3);
+    border-style: none;
+    transition: 0,5s ease-in;
+    outline: none;
+    box-shadow: none;
+}
+.form-control:focus{
+background: none;
+box-shadow: none;
+outline: none;
+}
+.form-control::placeholder{
+    color:rgb(187, 186, 186);
+}
+.ingresar{
+    /* background: #274757; */
+    background: rgba(56, 137, 151, 0.5);
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700!important;
+    box-shadow: 0 0 20px rgba(0, 0, 0,0.568);
+    transition: 0,5s ease-in;
+}
+.ingresar:hover{
+    color:white;
+}
+.olvide{
+    color: white;
+    text-decoration-line: none;
+    text-decoration-style: none;
+}
+.olvide:hover{
+    color: white;
+    text-decoration-line: none;
+    text-decoration-style: none;
+    cursor: pointer;
+}
+.registrarse{
+    color: white;
+    text-decoration-line: none;
+    text-decoration-style: none;
+    font-size: 20px;
+    font-weight: 700!important;
+    /* border:2px solid white; */
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(0,0,0,.5);
+}
+
+.icono{
+    justify-content: center;
+}
+.nav{
+    background: #1f3d3d;
+    box-shadow: 0 0 20px rgba(0, 0, 0,0.568);
+    height: 50px;
+
+}

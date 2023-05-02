@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="container" >
+        <div class="row justify-content-center pt-5 mt-5 mr-1">
+            <div class="row-md-4 formulario register">
+                <div class="form-group text-center pt-3">
+                    <img src="../media/trip.png" alt="login" style="height: 7rem;">
+                </div>
+                <form action='{% url "registrarse" %}' method="POST">
+                    {% csrf_token %}
+                    <div class="form-group text-center pt-3">
+                        <h1 class="text-light iniciar"> REGISTRARSE</h1>
+                    </div>
+                    <div class="form-group mx-sm-4 pt-3">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="email">
+                    </div>
+                    <div class="form-group mx-sm-4 pt-3">
+                        <input type="text" class="form-control" name="first_name" id="first_name" placeholder="Nombre">
+                    </div>
+                    <div class="form-group mx-sm-4 pt-3">
+                        <input type="text" class="form-control" name="last_name" id="last_name" placeholder="Apelllido">
+                    </div>
+                    <div class="form-group mx-sm-4 pt-3">
+                        <input type="text" class="form-control" name="username" id="username" placeholder="Nombre de usuario">
+                    </div>
+                    <div class="form-group mx-sm-4 pb-3">
+                        <input type="password" class="form-control" name="password1" id="password1" placeholder="Contraseña">
+                    </div>
+                    <div class="form-group mx-sm-4 pb-3">
+                        <input type="password" class="form-control" name="password2" id="password2" placeholder="Confirmar Contraseña">
+                    </div>
+                    <div class="form-group  mx-sm-4 pb-2">
+                        <input type="submit" id="submit" class="btn btn-block ingresar" value="ACEPTAR">
+                    </div>
+                    <div class="form-group mx-ms-4  text-right">
+                        <span><a href="#" class="olvide">Olvidé mi contraseña</a></span>
+                    </div>
+                    <div class="form-group text-center">
+                        <span><a href="#" class="registrarse">INCIAR SESIÓN</a></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<p>{{mensaje}}</p>
+{% endblock %}

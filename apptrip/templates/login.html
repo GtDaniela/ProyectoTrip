@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+        <div class="row justify-content-center pt-5 mt-5 mr-1">
+            <div class="row-md-4 formulario">
+                <div class="form-group text-center pt-3">
+                    <img src="/img/trip.png" alt="login"  style="height: 7rem;">
+                </div>
+                <form method="POST">
+                    {% csrf_token %}
+                    <div class="form-group text-center pt-3">
+                        <h1 class="text-light iniciar"> INICIAR SESIÓN</h1>
+                    </div>
+                    <div class="form-group mx-sm-4 pt-3">
+                        <input type="text" class="form-control" name="username" placeholder="Ingrese su Usuario">
+                    </div>
+                    <div class="form-group mx-sm-4 pb-3">
+                        <input type="password" class="form-control" name="password" placeholder="Ingrese su Contraseña">
+                    </div>
+                    <div class="form-group  mx-sm-4 pb-2">
+                        <input type="submit" class="btn btn-block ingresar" value="INGRESAR">
+                    </div>
+                    <div class="form-group mx-ms-4  text-right">
+                        <span><a href="#" class="olvide">Olvidé mi contraseña</a></span>
+                    </div>
+                    <div class="form-group text-center">
+                        <span><a href="{% url 'registrarse' %}" class="registrarse">REGISTRARSE</a></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}
